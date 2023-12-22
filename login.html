@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flights - Maskapai Penerbangan</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <link href="assets/logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="css/flights.css" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Inside the <head> tag -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="js/jquery.js"></script>
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <section id="topbar" class="topbar d-flex align-items-center">
+    <div class="container d-flex justify-content-center justify-content-md-between">
+      <div class="social-links d-none d-md-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+    </div>
+  </section><!-- End Top Bar -->
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="" class="logo d-flex align-items-center">
+        <h1>Maskapai<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profil.html">About</a></li>
+          <li class="dropdown"><a href="flights.html"><span>Flights</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="flights.html">Available Flights</a></li>
+              <li class="dropdown"><a href="#destinations"><span>Destinations</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+                <ul>
+                  <li><a href="flights.html">Top Destinations</a></li>
+                  <li><a href="flights.html">Asia</a></li>
+                  <li><a href="flights.html">Europe</a></li>
+                  <li><a href="flights.html">America</a></li>
+                  <li><a href="flights.html">Australia</a></li>
+                  <li><a href="flights.html">Africa</a></li>
+                </ul>
+              </li>
+              <li><a href="flights.html">Check In</a></li>
+              <li><a href="flights.html">Flight Informations</a></li>
+              <li><a href="flights.html">FAQ</a></li>
+            </ul>
+          </li>
+          <li><a href="index.html">Logout</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+    <div class="container position-relative">
+      <div class="row gy-5" data-aos="fade-in" style="">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+          <h2>Welcome <span>Name</span>!</h2>
+          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="#" class="btn-get-started no-underline">Check Destination</a>
+            <a href="#" class="glightbox btn-watch-video d-flex align-items-center no-underline"><i class="glightbox btn-watch-video d-flex align-items-center bi bi-play-circle fas fa-chevron-right"></i><span>More Informations</span></a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2">
+          <img src="assets/iconi3.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End Hero Section -->
+
+  <main id="main">
+    
+    <section>
+        <div class="container">
+            <ul class="nav nav-tabs" id="myTripsTabs" role="tablist">
+              <li class="nav-item">
+                <a class="nav-link active" id="ongoing-tab" data-toggle="tab" href="#ongoing" role="tab" aria-controls="ongoing" aria-selected="true">On Going</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="history" aria-selected="false">History</a>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTripsTabContent">
+              <div class="tab-pane fade show active" id="ongoing" role="tabpanel" aria-labelledby="ongoing-tab">
+                <div class="card-deck">
+                  <!-- Card content for On Going trips -->
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Trip Name</h5>
+                      <p class="card-text">Location: City, Country</p>
+                      <p class="card-text">Date: Start Date - End Date</p>
+                      <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                  </div>
+                  <!-- More cards for On Going trips if needed -->
+                </div>
+              </div>
+              
+              <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="history-tab">
+                <div class="card-deck">
+                  <!-- Card content for History of trips -->
+                  <div class="card">
+                    <div class="card-body">
+                      <h5 class="card-title">Trip Name</h5>
+                      <p class="card-text">Location: City, Country</p>
+                      <p class="card-text">Date: Start Date - End Date</p>
+                      <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title">Trip Name</h5>
+                      <p class="card-text">Location: City, Country</p>
+                      <p class="card-text">Date: Start Date - End Date</p>
+                      <a href="#" class="btn btn-primary">View Details</a>
+                    </div>
+                  </div>
+                  <!-- More cards for History of trips if needed -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Check In and Vouchers section -->
+<div class="container mt-4">
+  <div class="row">
+<div class="col-md-6">
+  <div class="card h-100 check-in-card">
+    <div class="card-body">
+      <h5 class="card-title">Check In</h5>
+      <p class="card-text">Check in for your upcoming flights to save time at the airport.</p>
+      <form id="quickCheckInForm">
+        <div class="mb-3">
+          <label for="flightNumber" class="form-label">Flight Number</label>
+          <input type="text" class="form-control" id="flightNumber" placeholder="Enter your flight number" required>
+        </div>
+        <div class="mb-3">
+          <label for="passengerName" class="form-label">Passenger Name</label>
+          <input type="text" class="form-control" id="passengerName" placeholder="Enter your name" required>
+        </div>
+        <button type="button" class="btn btn-primary check-in-btn" onclick="quickCheckIn()">Check In Now</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-6">
+  <div class="card h-100 vouchers-card">
+    <div class="card-body">
+      <h5 class="card-title" style="text-align: center;">Vouchers</h5>
+      <div class="vouchers-info">
+        <div class="user-vouchers">
+          <h6>Your Vouchers</h6>
+          <ul>
+            <li>
+              <span class="voucher-icon">
+                <i class="fas fa-gift"></i>
+              </span>
+              Voucher 1 - 10% off on next booking
+            </li>
+            <li>
+              <span class="voucher-icon">
+                <i class="fas fa-utensils"></i>
+              </span>
+              Voucher 2 - Free lounge access
+            </li>
+            <!-- Tambahkan informasi lebih lanjut mengenai vouchers user di sini -->
+          </ul>
+        </div>
+        <div class="available-vouchers">
+          <h6>Available Offers</h6>
+          <ul>
+            <li>
+              <span class="voucher-icon">
+                <i class="fas fa-globe"></i>
+              </span>
+              New Year Sale - Up to 20% off
+            </li>
+            <li>
+              <span class="voucher-icon">
+                <i class="fas fa-user-friends"></i>
+              </span>
+              Refer a Friend - Get $50 off
+            </li>
+            <!-- Tambahkan informasi lebih lanjut mengenai vouchers yang ditawarkan di sini -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="margin-left: 150px;">
+        <a href="#" class="btn btn-primary">View All Vouchers</a>
+      </div>
+  </div>
+</div>
+
+  </div>
+</div>
+          
+    </section>
+
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>Maskapai<span style="color: #f85a40;">.</span></span>
+          </a>
+          <p>Menyuguhkan perjalanan tak terlupakan dengan layanan unggul, web maskapai kami menghadirkan pengalaman penerbangan yang nyaman dan terpercaya. Temukan destinasi impian Anda dengan kenyamanan dan keamanan tingkat tinggi bersama kami.</p>
+          <div class="social-links d-flex mt-4">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i>
+              <img src="assets/logo-x.png" class="card-img-top" alt="twitter">
+            </a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i>
+              <img src="assets/logo-facebook.png" class="card-img-top" alt="facebook">
+            </a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i>
+              <img src="assets/logo-instagram.png" class="card-img-top" alt="instagram">
+            </a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i>
+              <img src="assets/logo-linkedin.png" class="card-img-top" alt="linkedin">
+            </a>
+          </div>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Useful Links</h4>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Privacy policy</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-2 col-6 footer-links">
+          <h4>Our Services</h4>
+          <ul>
+            <li><a href="#">Flights</a></li>
+            <li><a href="#">Cabin Informations</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Vouchers</a></li>
+            <li><a href="#">My Trips</a></li>
+          </ul>
+        </div>
+
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            Jl. Ahmad Yani No. 200 <br>
+            Kampus V FKIP UNS Pabelan <br>
+            Surakarta, Indonesia <br><br>
+            <strong>Phone:</strong> 0271 01030810<br>
+            <strong>Email:</strong> maskapai@airline.com<br>
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container mt-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Kelompok B-R</span></strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        Designed by Kelompok B-R</a>
+      </div>
+    </div>
+
+  </footer><!-- End Footer -->
+  <!-- End Footer -->
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="js/flights.js"></script>
+
+  <a href="tel:+123456789" class="customer-service">
+    <i class="fas fa-headset"></i>
+  </a>
+
+</body>
+
+</html>

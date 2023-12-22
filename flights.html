@@ -7,9 +7,7 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/logo.png" rel="icon">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,14 +15,15 @@
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="style.css" rel="stylesheet">
+  <link href="css/flights.css" rel="stylesheet">
 
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link href="flights.css" rel="stylesheet">
+
   <!-- Inside the <head> tag -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <script src="js/jquery.js"></script>
 </head>
 
 <body>
@@ -44,34 +43,32 @@
   <header id="header" class="header d-flex align-items-center">
 
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
+      <a href="" class="logo d-flex align-items-center">
         <h1>Maskapai<span>.</span></h1>
       </a>
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li class="dropdown"><a href="#"><span>Flights</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="profil.html">About</a></li>
+          <li class="dropdown"><a href="flights.html"><span>Flights</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
             <ul>
-              <li><a href="#">Available Flights</a></li>
+              <li><a href="flights.html">Available Flights</a></li>
               <li class="dropdown"><a href="#destinations"><span>Destinations</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
                 <ul>
-                  <li><a href="#">Top Destinations</a></li>
-                  <li><a href="#">Asia</a></li>
-                  <li><a href="#">Europe</a></li>
-                  <li><a href="#">America</a></li>
-                  <li><a href="#">Australia</a></li>
-                  <li><a href="#">Africa</a></li>
+                  <li><a href="flights.html">Top Destinations</a></li>
+                  <li><a href="flights.html">Asia</a></li>
+                  <li><a href="flights.html">Europe</a></li>
+                  <li><a href="flights.html">America</a></li>
+                  <li><a href="flights.html">Australia</a></li>
+                  <li><a href="flights.html">Africa</a></li>
                 </ul>
               </li>
-              <li><a href="#">Check In</a></li>
-              <li><a href="#">Flight Informations</a></li>
-              <li><a href="#">FAQ</a></li>
+              <li><a href="flights.html">Check In</a></li>
+              <li><a href="flights.html">Flight Informations</a></li>
+              <li><a href="flights.html">FAQ</a></li>
             </ul>
           </li>
-          <li><a href="#">Login</a></li>
+          <li><a href="form.html">Login</a></li>
         </ul>
       </nav><!-- .navbar -->
 
@@ -88,14 +85,14 @@
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
           <h2>Flight Services</h2>
-          <p>Sed autem laudantium dolores. Voluptatem itaque ea consequatur eveniet. Eum quas beatae cumque eum quaerat.</p>
+          <p>Kami Tidak Hanya Menawarkan Penerbangan, Kami Menyuguhkan Pengalaman. Layanan Penerbangan Terbaik untuk Membuat Perjalanan Anda Tak Terlupakan.</p>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="#" class="btn-get-started no-underline">Check In Now</a>
             <a href="#" class="glightbox btn-watch-video d-flex align-items-center no-underline"><i class="glightbox btn-watch-video d-flex align-items-center bi bi-play-circle fas fa-chevron-right"></i><span>More Informations</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="assets/img/hero-img.svg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <img src="assets/iconi3.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
         </div>
       </div>
     </div>
@@ -107,28 +104,28 @@
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-easel"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+              <h4 class="title"><a href="" class="stretched-link">Cabin Informations</a></h4>
             </div>
           </div><!--End Icon Box -->
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-gem"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4>
+              <h4 class="title"><a href="" class="stretched-link">Flight Schedules</a></h4>
             </div>
           </div><!--End Icon Box -->
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-geo-alt"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Magni Dolores</a></h4>
+              <h4 class="title"><a href="" class="stretched-link">Books and Trips</a></h4>
             </div>
           </div><!--End Icon Box -->
 
           <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
               <div class="icon"><i class="bi bi-command"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
+              <h4 class="title"><a href="" class="stretched-link">Offers</a></h4>
             </div>
           </div><!--End Icon Box -->
 
@@ -148,7 +145,7 @@
 
         <div class="section-header">
           <h2>Available Flights</h2>
-          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+          <p>Penerbangan yang tersedia dan terjamin. Kesempatan Penerbangan Menarik: Amankan Perjalananmu Sekarang!</p>
         </div>
 
         <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -169,7 +166,8 @@
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                    Nikmati keindahan budaya Yogyakarta yang kaya, dari kraton istana hingga pesona alam Gunungkidul yang menakjubkan. Penerbangan ini akan mengantar Anda pada petualangan tak terlupakan.
+                    Dapatkan banyak diskon destinasi wisata di Yogyakarta melalui Maskapai!
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -191,7 +189,8 @@
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    Jelajahi pesona sejarah dan budaya kota Solo yang memukau, dari kraton hingga kekayaan seni tradisional Jawa. Nikmati perjalanan yang menginspirasi.
+                    Voucher penawaran tersedia hingga Januari 2024!
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -213,7 +212,8 @@
                   </div>
                   <p>
                     <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
+                    Jelajahi pesona modern Shanghai dengan keindahan arsitektur futuristik, kekayaan budaya, dan cita rasa kuliner yang memikat. Nikmati perjalanan yang penuh inspirasi.
+                    Dapatkan penawaran diskon hotel di Shanghai melalui Maskapai!
                     <i class="bi bi-quote quote-icon-right"></i>
                   </p>
                 </div>
@@ -230,154 +230,30 @@
     </section><!-- End availables Section -->
 
     <!-- ======= destinations Section ======= -->
-    <section id="destinations" class="destinations sections-bg">
-      <div class="container" data-aos="fade-up">
+    <div class="container-fluid p-0">
+        <div class="card border-0">
+          <div class="card-body text-center">
+            <h1 class="card-title"><spans style="font-size: 30px;">Flight Destinations</spans></h1>
+            
+            <!-- Filter Buttons -->
+            <div class="btn-group mb-4" role="group">
+              <button type="button" class="btn filter-btn" data-filter="all">Favorites</button>
+              <button type="button" class="btn filter-btn" data-filter="asia">Asia</button>
+              <button type="button" class="btn filter-btn" data-filter="europe">Eropa</button>
+              <button type="button" class="btn filter-btn" data-filter="australia">Australia</button>
+              <button type="button" class="btn filter-btn" data-filter="america">Amerika</button>
+            </div>
+            
+            <!-- Daftar Destinasi -->
+            <div class="row justify-content-center" id="destinations">
+              <!-- Data destinasi akan dimuat disini -->
+            </div>
 
-        <div class="section-header">
-          <h2>Destinations</h2>
-          <p>Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti</p>
-        </div>
-
-        <div class="destinations-isotope" data-destinations-filter="*" data-destinations-layout="masonry" data-destinations-sort="original-order" data-aos="fade-up" data-aos-delay="100">
-
-          <div>
-            <ul class="destinations-flters">
-              <li class="filter-active">All</li>
-              <li data-filter="filter-top">Top</li>
-              <li data-filter="filter-asia">Asia</li>
-              <li data-filter="filter-europe">Europe</li>
-              <li data-filter="filter-america">America</li>
-            </ul><!-- End destinations Filters -->
+            <a href="" style="margin-left: 90%;"><span>More...</span></a>
           </div>
-
-          <div class="row gy-4 destinations-container">
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-top">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/app-1.jpg" class="glightbox"><img src="assets/img/destinations/app-1.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">App 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-asia">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/product-1.jpg" class="glightbox"><img src="assets/img/destinations/product-1.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Product 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-europe">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/branding-1.jpg" class="glightbox"><img src="assets/img/destinations/branding-1.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Branding 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-america">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/books-1.jpg" class="glightbox"><img src="assets/img/destinations/books-1.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Books 1</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-top">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/app-2.jpg" class="glightbox"><img src="assets/img/destinations/app-2.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">App 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-asia">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/product-2.jpg" class="glightbox"><img src="assets/img/destinations/product-2.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Product 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-europe">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/branding-2.jpg" class="glightbox"><img src="assets/img/destinations/branding-2.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Branding 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-america">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/books-2.jpg" class="glightbox"><img src="assets/img/destinations/books-2.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Books 2</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-top">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/app-3.jpg" class="glightbox"><img src="assets/img/destinations/app-3.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">App 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-asia">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/product-3.jpg" class="glightbox"><img src="assets/img/destinations/product-3.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Product 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-europe">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/branding-3.jpg" class="glightbox"><img src="assets/img/destinations/branding-3.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Branding 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-            <div class="col-xl-4 col-md-6 destinations-item filter-america">
-              <div class="destinations-wrap">
-                <a href="assets/img/destinations/books-3.jpg" class="glightbox"><img src="assets/img/destinations/books-3.jpg" class="img-fluid" alt=""></a>
-                <div class="destinations-info">
-                  <h4><a href="" title="More Details">Books 3</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
-                </div>
-              </div>
-            </div><!-- End destinations Item -->
-
-          </div><!-- End destinations Container -->
-
         </div>
-
       </div>
-    </section><!-- End destinations Section -->
+    <!-- End destinations Section -->
 
     <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq">
@@ -389,7 +265,7 @@
             <div class="content px-xl-5">
               <h3>Frequently Asked <strong>Questions</strong></h3>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+                Temukan Jawaban untuk Pertanyaan Umummu! Sederhanakan Perjalananmu dengan Informasi yang Akurat!
               </p>
             </div>
           </div>
@@ -402,13 +278,13 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" onclick="toggleAnswer('faq-content-1', 'arrow1')">
                     <span class="num">1.</span>
-                    Non consectetur a erat nam at lectus urna duis?
+                    Bagaimana cara saya memeriksa jadwal penerbangan saya?
                     <i class="fas fa-chevron-down arrow" id="arrow1"></i>
                   </button>
                 </h3>
                 <div id="faq-content-1" class="accordion-collapse collapse">
                   <div class="accordion-body">
-                    Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+                    Anda dapat memeriksa jadwal penerbangan Anda melalui situs web maskapai, aplikasi seluler maskapai, atau dengan menghubungi layanan pelanggan maskapai.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -417,13 +293,13 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" onclick="toggleAnswer('faq-content-2', 'arrow2')">
                     <span class="num">2.</span>
-                    Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?
+                    Berapa berat maksimum bagasi yang diizinkan untuk dibawa?
                     <i class="fas fa-chevron-down arrow" id="arrow2"></i>
                   </button>
                 </h3>
                 <div id="faq-content-2" class="accordion-collapse collapse">
                   <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    Batasan berat bagasi tergantung pada maskapai dan jenis tiket yang Anda beli. Biasanya, batasnya berkisar antara 20-23 kg untuk bagasi terdaftar dan 7-10 kg untuk bagasi kabin.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -432,13 +308,13 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" onclick="toggleAnswer('faq-content-3', 'arrow3')">
                     <span class="num">3.</span>
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi?
+                    Apakah ada makanan khusus yang dapat diminta di pesawat?
                     <i class="fas fa-chevron-down arrow" id="arrow3"></i>
                   </button>
                 </h3>
                 <div id="faq-content-3" class="accordion-collapse collapse">
                   <div class="accordion-body">
-                    Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
+                    Ya, kebanyakan maskapai menyediakan opsi makanan khusus seperti makanan vegetarian, makanan halal, makanan bebas gluten, dan lainnya. Anda bisa memesan makanan khusus saat memesan tiket atau melalui layanan pelanggan.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -447,13 +323,13 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" onclick="toggleAnswer('faq-content-4', 'arrow4')">
                     <span class="num">4.</span>
-                    Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla?
+                    Bagaimana saya bisa mendapatkan upgrade kelas?
                     <i class="fas fa-chevron-down arrow" id="arrow4"></i>
                   </button>
                 </h3>
                 <div id="faq-content-4" class="accordion-collapse collapse">
                   <div class="accordion-body">
-                    Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
+                    Anda bisa mendapatkan upgrade kelas dengan menggunakan poin reward jika Anda anggota program loyalitas maskapai. Selain itu, terkadang upgrade bisa dibeli saat check-in atau di konter maskapai, tergantung pada ketersediaan.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -462,13 +338,13 @@
                 <h3 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" onclick="toggleAnswer('faq-content-5', 'arrow5')">
                     <span class="num">5.</span>
-                    Tempus quam pellentesque nec nam aliquam sem et tortor consequat?
+                    Apakah ada persyaratan khusus sebelum penerbangan internasional?
                     <i class="fas fa-chevron-down arrow" id="arrow5"></i>
                   </button>
                 </h3>
                 <div id="faq-content-5" class="accordion-collapse collapse">
                   <div class="accordion-body">
-                    Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+                    Ya, untuk penerbangan internasional, biasanya Anda perlu memeriksa persyaratan visa, vaksinasi, dan paspor yang masih berlaku. Pastikan untuk memeriksa persyaratan khusus dari negara tujuan Anda sebelum keberangkatan.
                   </div>
                 </div>
               </div><!-- # Faq item-->
@@ -490,14 +366,22 @@
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span>Impact</span>
+            <span>Maskapai<span style="color: #f85a40;">.</span></span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>Menyuguhkan perjalanan tak terlupakan dengan layanan unggul, web maskapai kami menghadirkan pengalaman penerbangan yang nyaman dan terpercaya. Temukan destinasi impian Anda dengan kenyamanan dan keamanan tingkat tinggi bersama kami.</p>
           <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i>
+              <img src="assets/logo-x.png" class="card-img-top" alt="twitter">
+            </a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i>
+              <img src="assets/logo-facebook.png" class="card-img-top" alt="facebook">
+            </a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i>
+              <img src="assets/logo-instagram.png" class="card-img-top" alt="instagram">
+            </a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i>
+              <img src="assets/logo-linkedin.png" class="card-img-top" alt="linkedin">
+            </a>
           </div>
         </div>
 
@@ -526,11 +410,11 @@
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            A108 Adam Street <br>
-            New York, NY 535022<br>
-            United States <br><br>
-            <strong>Phone:</strong> +1 5589 55488 55<br>
-            <strong>Email:</strong> info@example.com<br>
+            Jl. Ahmad Yani No. 200 <br>
+            Kampus V FKIP UNS Pabelan <br>
+            Surakarta, Indonesia <br><br>
+            <strong>Phone:</strong> 0271 01030810<br>
+            <strong>Email:</strong> maskapai@airline.com<br>
           </p>
 
         </div>
@@ -540,10 +424,10 @@
 
     <div class="container mt-4">
       <div class="copyright">
-        &copy; Copyright <strong><span>Kelompok XX</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>Kelompok B-R</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
-        Designed by Kelompok XX</a>
+        Designed by Kelompok B-R</a>
       </div>
     </div>
 
@@ -556,7 +440,100 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="scripts.js"></script>
+  <script src="js/flights.js"></script>
+
+  <script>
+    // Data destinasi dengan informasi tambahan (gambar, harga, informasi)
+const destinations = [
+  { 
+    name: 'Tokyo, Jepang',
+    category: 'asia',
+    image: 'https://via.placeholder.com/300',
+    price: '$1200',
+    info: 'Perpaduan unik antara tradisi dan teknologi modern'
+  },
+  { 
+    name: 'Long Angeles, Amerika',
+    category: 'america',
+    image: 'https://via.placeholder.com/300',
+    price: '$1500',
+    info: 'Pusat hiburan global dengan Hollywood dan pantai yang menarik'
+  },
+  { 
+    name: 'Sydney, Australia',
+    category: 'australia',
+    image: 'https://via.placeholder.com/300',
+    price: '$900',
+    info: 'Ikonik dengan Opera House dan pantai spektakuler'
+  },
+  { 
+    name: 'Britania Raya, Europe',
+    category: 'europe',
+    image: 'https://via.placeholder.com/300',
+    price: '$11000',
+    info: 'Sejarah kaya dan kehidupan kota yang dinamis'
+  },
+  { 
+    name: 'Jakarta, Indonesia',
+    category: 'asia',
+    image: 'https://via.placeholder.com/300',
+    price: '$800',
+    info: 'Keragaman budaya dan kehidupan kota yang bersemangat'
+  },
+];
+
+// Fungsi untuk menampilkan destinasi sesuai filter
+function displayDestinations(category) {
+  const destinationsContainer = document.getElementById('destinations');
+  destinationsContainer.innerHTML = '';
+
+  let filteredDestinations = destinations;
+  if (category !== 'all') {
+    filteredDestinations = destinations.filter(destination => destination.category === category);
+  }
+
+  filteredDestinations.forEach(destination => {
+    createDestinationCard(destination);
+  });
+}
+
+// Fungsi untuk membuat tampilan kartu destinasi
+function createDestinationCard(destination) {
+  const destinationCard = document.createElement('div');
+  destinationCard.classList.add('col-md-4', 'mb-4');
+
+  const card = `
+    <div class="card">
+      <img src="${destination.image}" class="destination-image" alt="${destination.name}">
+      <div class="card-body">
+        <h5 class="card-title">${destination.name}</h5>
+        <p class="card-text">${destination.info}</p>
+        <p class="card-text"><strong>Harga:</strong> ${destination.price}</p>
+      </div>
+    </div>
+  `;
+
+  destinationCard.innerHTML = card;
+  document.getElementById('destinations').appendChild(destinationCard);
+}
+
+// Event listener untuk tombol filter
+document.addEventListener('DOMContentLoaded', () => {
+  const filterButtons = document.querySelectorAll('.filter-btn');
+
+  filterButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const category = btn.getAttribute('data-filter');
+      displayDestinations(category);
+    });
+  });
+  
+  // Tampilkan semua destinasi saat halaman dimuat
+  displayDestinations('all');
+});
+
+
+  </script>
 
 </body>
 
