@@ -85,6 +85,26 @@
     margin-bottom: 0;
     color: #6f6f6f;
   }
+
+  /* Styling untuk hamburger icon */
+.navbar-toggle {
+  display: none; /* Hilangkan hamburger di tampilan desktop */
+  cursor: pointer;}
+
+  /* Media query untuk tampilan smartphone */
+@media screen and (max-width: 768px) {
+  .navbar-toggle {
+    display: block; /* Tampilkan hamburger di tampilan smartphone */
+  }
+
+  .navbar-menu {
+    display: none; /* Sembunyikan menu di awal */
+  }
+
+  .navbar-menu.active {
+    display: block; /* Tampilkan menu saat hamburger diklik */
+  }
+}
   
   /*--------------------------------------------------------------
   # Breadcrumbs
